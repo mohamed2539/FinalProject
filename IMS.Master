@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="IMS.master.cs" Inherits="IT508_Project.IMS" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Css/all.css" />
+    <link rel="stylesheet" href="Css/all.min.css" />
+    <link rel="stylesheet" href="Css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script type="text/javascript">
+    function redirectToPage(targetPage) {
+        document.getElementById('targetPage').value = targetPage;
+        document.getElementById('privilegeForm').submit();
+    }
+    </script>
+
+</head>
+<body>
+
+   <%-- <div class="MenuContainer">--%>
+
+    <div class="menu">
+
+        <div class="UserProfile">
+            <asp:Label id="CurrentUser" runat="server"></asp:Label>
+            <img src="img/profile.jpeg" alt="Profile Image" />
+        </div>
+        <form method="post" action="PrivilegeCheckHandler.aspx" id="privilegeForm">
+            <input type="hidden" name="targetPage" id="targetPage" value="" />
+        </form>
+            
+        <ul class="UlContainer">
+            <li>
+                <button type="submit" class="btn" data-target="Dashboard.aspx" id="Dash"><i class="fa fa-home HomeIcon"></i>Dashboard</button>
+            </li>
+            <li>
+                <button type="submit" class="btn" data-target="createnewobject.aspx"><i class="fa fa-plus-square AddnewIcon"></i>Create New Object</button>
+            </li>
+            <li>
+                <button type="submit" class="btn" data-target="IncomeTest.aspx"><i class="fa fa-share IncomingIcon"></i>Inbound Inventory</button>
+            </li>
+            <li>
+                <button type="submit" class="btn" data-target="disburse.aspx"><i class="fa fa-reply IncomingIcon"></i>Outbound Inventory</button>
+            </li>
+            <li>
+                <button type="submit" class="btn" data-target="Auditing.aspx"><i class="fa fa-pencil-square-o EditIocn"></i>Audit</button>
+            </li>
+            <li>
+                <button type="submit" class="btn" data-target="PosSystem.aspx"><i class="fa-solid fa-list SearchIcon"></i>POS System</button>
+            </li>
+            <li>
+                <button type="submit" class="btn" data-target="Report.aspx"><i class="fa fa-book ReprotIcon"></i>Reports</button>
+            </li>
+            <li>
+                <button type="submit" class="btn" data-target="SearchPage.aspx"><i class="fa fa-search SearchIcon"></i>Search</button>
+            </li>
+        </ul>
+
+        <%-- log out Button Style --%>
+
+        <div class="log-out">
+            <a href="Login.aspx"><i class="LogutIcon fa fa-sign-out"></i>Log Out</a>
+        </div>
+    </div>
+        
+  <%--</div>--%> <%-- End Of Container Class --%>
+
+    <div class="content" style="text-align: center;">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.btn').forEach(button => {
+                button.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    document.getElementById('targetPage').value = this.getAttribute('data-target');
+                    document.getElementById('privilegeForm').submit();
+                });
+            });
+        });
+    </script>
+</body>
+</html>

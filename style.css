@@ -1,0 +1,1310 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+
+@font-face {
+    src: url("fonts/Ubuntu-Bold.ttf");
+    font-family: 'Ubuntu';
+}
+
+@font-face {
+    src: url("fonts/Poppins-Medium.ttf");
+    font-family: 'Poppins';
+}
+
+@font-face {
+    src: url("fonts/LilitaOne-Regular.ttf");
+    font-family: 'LilitaOne';
+}
+
+body {
+    display: flex;
+    background-color: #f0f2fa;
+}
+
+.MasterPageContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.LoginUserName {
+    display: block;
+    width: 100%;
+}
+
+.navBar {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.16);
+    box-shadow: 3px 3px 2px 0px #E2E2E2;
+    height: 60px;
+    float: right;
+}
+
+::placeholder {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3a86ff;
+}
+
+/******************************************Start General Style*********************************************************************/
+
+form h2, h3, h4 {
+    color: #31344b;
+    font-family: 'LilitaOne';
+}
+
+h4 .ErrorClass{
+    display:block;
+    color:rgb(255,9,9);
+    font-weight:bold;
+    padding:20px;
+    margin:5px;
+    /*background-color:rgb(255,9,9);*/
+}
+.GeneralSuccess {
+    display: inline-block;
+    width: 300px;
+    padding: 15px;
+    color: #399918;
+}
+/***********************Start Lable Style************************/
+.SuccessLabel {
+    color: #4CAF50;
+}
+.GeneralErrorMessage {
+    margin: 2px 15px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF0000;
+}
+.SearchErorrMessage {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255,9,9);
+}
+
+/***********************End  Lable Style************************/
+.GeneralForm {
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    justify-items:center;
+    flex-direction:column;
+    width: 40%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.GeneralInput {
+    border: none;
+    outline: none;
+    padding: 0 6px;
+    border-bottom: 6px solid #456392;
+    border-radius: 5px;
+    height: 45px;
+    width: 40%;
+    color: #456392;
+    margin: 60px 10px;
+    box-shadow: 3px 3px 2px 0px #E2E2E2;
+    transition: all 0.2s ease-in-out;
+}
+.GeneralInputII {
+    border: none;
+    outline: none;
+    padding: 0 6px;
+    border-bottom: 6px solid #456392;
+    border-radius: 5px;
+    height: 45px;
+    width: 40%;
+    color: #456392;
+    margin: 60px 10px;
+    transition: all 0.2s ease-in-out;
+}
+.LogutIcon {
+    transition: color 0.2s ease-in-out;
+}
+
+.GeneralInputTow {
+    border: none;
+    outline: none;
+    padding: 2px 8px;
+    height: 45px;
+    width: 60%;
+    color: #456392;
+    margin: 6px 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    transition: all 0.2s ease-in-out;
+}
+
+    .GeneralInputTow:hover {
+        background-color: #ecf0f3;
+        color: #456392;
+        outline-color: #405cf5;
+    }
+
+.GeneralButton {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    color: #3a86ff;
+    padding: 3px;
+    margin: 6px 29%;
+    width: 160px;
+    height: 40px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    border-radius: 3px;
+}
+
+.BigButton {
+    width: 300px;
+    background-color: #3a86ff;
+    color: #fff;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.MediumButton {
+    width: 180px;
+}
+.Generl-Label {
+    background-color: #fff;
+    
+    color: #3a86ff;
+    padding:20px;
+    margin:20px 5px;
+    display:block;
+}
+.TinyLeble {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    display: inline-block;
+    padding: 10px;
+    width: 170px;
+    color:#405cf5;
+}
+.LebleWithMoreWidth {
+    width: 200px;
+}
+.GeneralButton:hover {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    background-color: #ecf0f3;
+    color: #3a86ff;
+}
+
+.Container {
+    text-align: center;
+}
+
+.Select {
+    color: #31344b;
+    background-color: #fff;
+    margin: 8px 6px;
+    padding: 6px;
+    width:120px;
+    height:45px;
+}
+
+.GeneralShowAllButton {
+    background-color: #F0F2FA;
+    color: #3a86ff;
+    width: 190px;
+    transition: all 0.2s ease-in-out;
+}
+.GeneralShowAllButton:hover {
+    background-color:#3a86ff;
+    color:#fff;
+   
+}
+
+/******************************************End General Style*********************************************************************/
+
+.menu {
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #ecf0f3;
+    padding: 30px 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.2s ease;
+}
+
+    .menu i {
+        font-size: 25px;
+        margin-right: 10px;
+    }
+
+ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+    ul li {
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+        margin: 5px 0;
+        padding: 5px;
+    }
+
+        ul li .btn {
+            color: #31344b;
+            text-decoration: none;
+            display: block;
+            margin-top: 12px;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 10px 25px;
+            background: #ecf0f3;
+            border-radius: 6px;
+            position: relative;
+            transition: all 0.4s;
+            box-shadow: -1px -1px 7px #fff, 2px 6px 3px #ceced1;
+        }
+
+.btn:hover:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset -3px -3px 7px #fff, inset 3px 3px 5px #ceced1;
+}
+
+ul li .btn:hover {
+    color: #3a86ff;
+}
+
+.data-info, .box:hover {
+    text-decoration: none;
+    color: #777;
+}
+
+.UserProfile img {
+    max-width: 120px;
+    max-height: 80px;
+    border-radius: 50%;
+}
+
+.img-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+}
+
+.log-out {
+    margin: 20px 39px;
+    width: 100%;
+}
+
+    .log-out a {
+        text-align: center;
+        text-decoration: none;
+        width: 180px;
+        outline: none;
+        background-color: #ecf0f3;
+        border: none;
+        color: #31344b;
+        line-height: 2;
+        height: 45px;
+        display: block;
+        padding: 5px;
+        border-radius: 6px;
+        transition: all 0.2s ease-in-out;
+        font-family: 'LilitaOne';
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+        .log-out a:hover {
+            background-color: rgb(255,9,9);
+            color: #fff;
+            box-shadow: rgb(173 37 37 / 74%) 5px 1px 6px, rgb(173 20 20 / 89%) 2px 5px 0px
+        }
+
+.content {
+    width: 100%;
+    margin: 30px 8px;
+}
+
+.title-info {
+    width: 23%;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+    color: #31344b;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.data-info {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+    .data-info .box {
+        background-color: #ecf0f3;
+        display: flex;
+        flex-direction: row;
+        height: 120px;
+        padding: 20px 30px;
+        width: 250px;
+        border-radius: 8px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+.data-info .box .data {
+      position: relative;
+      top: 5px;
+      right: 55px;
+}
+
+.title-info p {
+    padding: 5px;
+}
+
+.data-info {
+    color: #31344b;
+    margin: 5px 0;
+}
+
+    .data-info .box i {
+        font-size: 55px;
+        color: #31344b;
+    }
+
+.DataIcon {
+    position: relative;
+    top: 0;
+    left: 74%;
+}
+
+.data-info .box .data span {
+    font-size: 40px;
+}
+
+.data-info .DashboardTable td, th, tr {
+    background-color: #ecf0f3;
+    color: #31344b;
+    padding: 0 8px;
+    box-shadow: rgb(0 0 0) 0px 1px 3px, rgb(0 0 0) 1px 2px 9px;
+}
+
+table {
+    text-align: center;
+    border-spacing: 8px;
+    margin: auto;
+}
+
+td, th {
+    height: 40px;
+}
+
+.quantity {
+    padding: 6px;
+    border-radius: 8px;
+    color: #123;
+}
+
+.btnAdd {
+    width: 120%;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 25px;
+}
+
+    .btnAdd:hover {
+        color: white;
+        width: 120%;
+        height: 50px;
+        border-radius: 8px;
+    }
+
+.title-info2 {
+    padding: 10px;
+    align-items: center;
+    border-radius: 8px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    font-size: 20px;
+}
+
+.data-info2 .box .data {
+    text-align: center;
+}
+
+.lbl01 {
+    font-weight: bold;
+}
+
+.lbl02 {
+    font-weight: bold;
+    text-align: left;
+    width: 25%;
+}
+
+.txtBx01 {
+    background-color: rgba(0, 0, 0, 0.16);
+    color: #fff;
+    border: none;
+    margin: 10px 0;
+    border-radius: 6px;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+
+::placeholder {
+    color: #31344b;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+.btnSubmit, .btnEdit, .btnSubmit2 {
+    background-color: #fff;
+    color: #405cf5;
+    border: none;
+    outline: none;
+    width: 25%;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.btnSubmit2, .btnSubmit {
+    width: 25%;
+    margin-bottom: 20px;
+}
+
+    .btnSubmit2:hover {
+        background-color: #ffffff55;
+    }
+
+.btnBack, .inptRest {
+    background-color: #405cf5;
+    border: none;
+    width: 25%;
+    outline: none;
+    height: 40px;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.inptRest {
+}
+
+.btnSubmit:hover, .btnEdit:hover {
+    background-color: #74c69d;
+    color: #fff;
+}
+
+.btnBack:hover, .inptRest:hover {
+    background-color: #dc4c64;
+    color: #fff;
+}
+
+.lblErrorMsg {
+    font-weight: bold;
+    color: rgb(255,9,9);
+}
+
+.tblpermissionData {
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+}
+
+    .tblpermissionData td, th {
+        width: 20%;
+        height: 40px;
+        text-align: center;
+    }
+
+.active {
+    padding: 20px 30px 20px 20px;
+    background-color: #fff;
+    color: #333;
+}
+
+/*Start Add new Page Style*/
+
+.data-info2 .PageHeader {
+    color: #405cf5;
+}
+
+.data-info2 .PageHeader {
+    background-color: #405cf5;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.ButtonsContainer {
+    height: auto;
+    padding: 20px 40px;
+    width: 720px;
+    margin: auto;
+}
+
+    .ButtonsContainer .data-info2 {
+        padding: 20px 0;
+        background-color: #ecf0f3;
+        height: 100%;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        text-align: center;
+        justify-content: center;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+        .ButtonsContainer .data-info2 .box {
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding: 20px 30px;
+            margin: 15px 30px;
+            border-radius: 6px
+        }
+
+            .ButtonsContainer .data-info2 .box i {
+                background-color: transparent;
+                color: #31344b;
+                font-size: 35px;
+                padding: 15px 0;
+            }
+
+.CustomButton {
+    appearance: button;
+    backface-visibility: hidden;
+    background-color: #405cf5;
+    border-radius: 15px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 100%;
+    height: 44px;
+    line-height: 1.15;
+    margin: 12px 0 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s,box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+    .CustomButton:disabled {
+        cursor: default;
+    }
+
+    .CustomButton:focus {
+        box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+    }
+
+/*End Add new Page Style*/
+
+/*Start Add new User form Style*/
+
+.addBox {
+}
+
+.AddNewUserHeader {
+    background-color: rgb(107 121 143 / 30%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 10px;
+    color: #31344b;
+}
+
+.addNewUserForm {
+    width: 50%;
+    margin: auto;
+    padding: 25px 10px;
+    border-radius: 6px;
+    border-width: 0;
+    background: #f0f2fa;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    text-align: center;
+    transition: all .2s,box-shadow .08s ease-in;
+}
+
+    .addNewUserForm .inputFaild {
+        width: 60%;
+        padding: 8px;
+        color: #405cf5;
+        font-size: 12px;
+        margin: 8px 0;
+        box-shadow: none;
+        border-radius: 0;
+        border-bottom: 2px solid #3a86ff;
+        transition: all 0.3s ease-in-out;
+    }
+
+.inputFaild:hover {
+    border-bottom: 4px solid #3a86ff;
+    background-color: transparent;
+}
+
+/*End Add new User form Style*/
+
+/*Start Report Page Style*/
+
+.Header {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+}
+
+.SearchInput {
+    font-size: 18px;
+    padding: 5px 20px;
+    width: 80%;
+    height: 45px;
+    outline: none;
+    background: #FFFFFF;
+    color: #000000;
+    border: 1px solid #C4D1EB;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px 0px #E2E2E2;
+    transition: .3s ease;
+}
+
+.ReportNameFaild {
+    border: none;
+    outline: none;
+    padding: 0 6px;
+    border-bottom: 6px solid #456392;
+    height: 45px;
+    width: 40%;
+    color: #456392;
+    margin: 60px 10px;
+    box-shadow: 3px 3px 2px 0px #E2E2E2;
+    transition: all 0.2s ease-in-out;
+}
+
+    .ReportNameFaild:hover {
+        border-bottom: 3px solid #3a86ff;
+        box-shadow: none;
+    }
+
+.Btn_Report {
+    width: 160px;
+    outline: none;
+    background-color: #ecf0f3;
+    border: none;
+    color: #31344b;
+    height: 45px;
+    padding: 5px;
+    transition: all 0.2s ease-in-out;
+    font-family: 'LilitaOne';
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+    .Btn_Report:hover {
+        color: #3a86ff;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+
+.SearchHeader {
+    color: #31344b;
+}
+
+.SearchInput:focus {
+    background: #F2F2F2;
+    border: 1px solid #5A7EC7;
+    border-radius: 10px;
+}
+
+.SearchInput::placeholder {
+    color: #31344b;
+}
+
+.Btn_Search {
+    width: 160px;
+    outline: none;
+    background-color: #405cf5;
+    border: none;
+    color: #fff;
+    height: 45px;
+    padding: 4px;
+    border-radius: 3px;
+    transition: all 0.3s ease-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+    .Btn_Search:hover {
+        background: #fff;
+        color: #3a86ff;
+        box-shadow: none;
+    }
+
+.ReprotTable {
+    margin-left: 10%;
+    margin: 20px 0;
+    background: #405cf5;
+    padding: 5px;
+    border-style: none;
+    color: #fff;
+}
+
+    .ReprotTable td, .sub2Box td {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px;
+        color: #31344b;
+    }
+
+.ReportButtonsContainer {
+    height: 450px;
+    margin: auto;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+}
+
+.ReportCompContainer h4 {
+    color: #31344b;
+    font-weight: bold;
+    font-size: 30px;
+    height: 120px;
+    padding: 30px 0;
+}
+
+.GroupOne, .GroupTow, .ReportCompContainer h4 {
+    background: #ecf0f3;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: 25px;
+    padding: 25px;
+}
+
+/************************************************End Report Page  Style****************************************/
+
+/************************************************Start  Disbursing  Page  Style****************************************/
+
+.DisbursingHeader {
+    color: #31344b;
+    font-weight: bold;
+    font-size: 30px;
+    height: 120px;
+    background: #ecf0f3;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: 25px;
+    padding: 10px;
+}
+
+.TmasterBox {
+    background: #ecf0f3;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    text-align: center;
+    width: 80%;
+    padding: 30px 0;
+    margin: auto;
+}
+
+.DisbursingForm {
+    width: 80%;
+    padding: 35px;
+    margin: auto;
+    background: #ecf0f3;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.DisbursingFormTable td, th {
+    background-color: #ecf0f3;
+}
+
+/************************************************End Disbursing Page  Style****************************************/
+
+/*Start Incoming Page  Style*/
+
+.InComingContainer {
+    background-color: #8f91a5cc;
+    padding: 40px;
+}
+
+.InComingPageForm {
+    background: #fff;
+    padding: 15px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 6px;
+    animation-name: zoomInLeft;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.sub2Box table {
+    margin: 20px 0;
+    background: #405cf5;
+    padding: 5px;
+    color: #fff;
+    width: 100%;
+}
+
+.sub2Box td, th {
+    background-color: #31344b;
+    color: #fff;
+    padding: 0 8px;
+    box-shadow: rgb(0 0 0) 0px 1px 3px, rgb(0 0 0) 1px 2px 9px;
+}
+
+.InconingCustomButton, .danger {
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    color: #405cf5;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+    .InconingCustomButton:hover {
+        background: #405cf5;
+        color: #fff;
+    }
+
+    .danger:hover {
+        background: #c82333;
+        color: #fff;
+    }
+
+/*End Incoming Page  Style*/
+
+.checkContainer {
+    padding: 15px;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.checkContainer CheckBox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.SearchCompenetContainer {
+    background: #ecf0f3;
+    padding: 12px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: 0.3s ease;
+    height: 200px;
+    margin: auto;
+}
+
+/**************************************************Start Add new wharehouse form style**************************************/
+
+.wharehouseForm {
+    width: 40%;
+    height: 350px;
+}
+
+.wharehouseInput {
+    color: #405cf5;
+    margin: 10px 0;
+    padding: 9px;
+    width: 270px;
+    transition: 0.3s ease;
+}
+
+    .wharehouseInput:hover {
+        background-color: #fff;
+    }
+
+.wharehouseButton {
+    margin: 8px 5px;
+}
+
+    .wharehouseButton:hover {
+        color: #405cf5;
+        background-color: rgba(0, 0, 0, 0.16);
+    }
+
+/**************************************************End Add new wharehouse form style**************************************/
+
+/**************************************************Start Add new Items form style**************************************/
+
+.ItemsForm {
+    width: 60%;
+    background: #ecf0f3;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.ItemsInput {
+    border-radius: 0;
+    width: 60%;
+    transition: all 0.2s ease-in-out;
+}
+
+.ItemsInput:hover {
+        background-color: #ecf0f3;
+        border-bottom: 1px solid #3a86ff;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.itemsSelectInput {
+    background: #fff;
+    color: #31344b;
+    border-radius: 0;
+    width: 60%;
+}
+
+/**************************************************End Add new Items form style**************************************/
+
+/************************************************** Start Animation **************************************/
+/*
+@-webkit-keyframes zoomInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+        transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+        transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+}
+
+@keyframes zoomInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+        transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+        transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+}*/
+/**************************************************End Animation **************************************/
+/**************************************************Strat POS System Style **************************************/
+.StoreOnePiceForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+POsStoreUpdataForm {
+    width: 40%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.StoreOnePiceInput {
+    outline: none;
+    padding: 0 6px;
+    border: none;
+    border-bottom: 3px solid #fff;
+    height: 45px;
+    width: 60%;
+    color: #fff;
+    margin: 10px;
+    font-size: 17px;
+    transition: all 0.2s ease-in-out;
+    background-color: transparent;
+}
+
+.StoreOnePiceInput::placeholder{
+    color:#fff;
+    font-size:14px;
+    
+}
+
+.PosShowAllButton {
+    background-color: #3a86ff ;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+.PosShowAllButton:hover {
+    background-color:#023e8a;
+    color: #fff;
+}
+
+.ShowAllLable {
+    background-color: #767e89a6;
+    color: #fff;
+    border-radius:6px;
+}
+/**************************************************End Animation **************************************/
+/************************************************** Start  Add Customer Form Style **************************************/
+.AddPosCustomerHeader {
+    background-color: #f0f2fa;
+    width: 360px;
+    height: 60px;
+    margin: 13px 17%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    color: #405cf5;
+    padding: 18px;
+}
+.AddCustomerForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.AddCustomerInput{
+    margin-left: 18%;
+}
+.AddCustomerButton {
+    margin-left:32%;
+}
+
+.AddCustomerInput::placeholder {
+    color: #405cf5;
+    font-size: 14px;
+}
+
+/************************************************** End  Add Customer Form Style **************************************/
+
+/************************************************** Start  Order Header SectionStyle **************************************/
+.CreateOrderForm {
+    /*    width: 560px;
+    height: 600px;*/
+    background: #ecf0f3;
+    text-align: center;
+    max-width: 65%;
+    margin: auto;
+    padding: 45px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.orderFormHeaderContainer{
+    display:block;
+    width:100%;
+    margin-bottom:8%;
+}
+.OrderHeaderSection, .OrderDetailsSection {
+  /*  width: 40%;*/
+    text-align:center;
+    height: auto;
+    margin: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    
+   
+}
+.OrderID {
+    margin-left: 44%;
+    margin-bottom: 6%;
+}
+.formGroup {
+    display: flex;
+    flex-direction: row;
+    /*  margin-left: 10%;*/
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+.OrderLabels {
+    /*display: inline-block;*/
+    color: #1c2ca3ad;
+    font-size: 15px;
+    font-weight: bold;
+}
+.ErroLabel{
+    color:rgb(255,9,9);
+}
+
+.OrderInput {
+    width: 100%;
+    display: block;
+}
+
+.TinyInput{
+    width:90px;
+    text-align:center;
+   
+}
+.StanderInputSize {
+    width: 155px;
+    text-align: center;
+}
+.CreateOrderButton {
+    margin:25px 15px;
+    background-color: #31344b;
+    color: #fff;
+}
+
+.CreateOrderButton:hover {
+}
+
+
+/************************************************** End  Order Header SectionStyle **************************************/
+/************************************************** End  Order Header SectionStyle **************************************/
+
+
+.EditInput, .DeleteInput {
+    width:90px;
+    height:30px;
+}
+.styled-table {
+    width: 100%;
+    margin:15% 0 0 0;
+    border-collapse: collapse;
+    background-color: #2c3e50;
+    color: white;
+}
+
+.styled-table th, .styled-table td {
+        padding: 12px 15px;
+        text-align: left;
+}
+
+    .styled-table th {
+        background-color: #34495e;
+        font-weight: bold;
+    }
+
+    .styled-table tr:nth-child(even) {
+        background-color: #3b4a61;
+    }
+
+    .styled-table tr:hover {
+        background-color: #1abc9c;
+    }
+
+
+/************************************************** End  Order Header Section Style **************************************/
+/************************************************** Strt   Edit order  Page Style **************************************/
+
+.InputID{
+    width:90px;
+    text-align:center;
+}
+.EditPageForm {
+    text-align: center;
+    width: 400px;
+}
+
+.EditPageForm .EidtInput{
+    display:block;
+}
+
+
+/************************************************** End  Edit order  Page Style **************************************/
+.UpadateOrderForm{
+
+    width:560px;
+
+}
+.GridViewOrders {
+    margin-bottom: 60px;
+}
+.GridViewOrders th{
+    padding:5px;
+    color: #fff;
+    box-shadow: rgb(0 0 0) 0px 1px 3px, rgb(0 0 0) 1px 2px 9px;
+}
+.GridViewOrders td{
+    background-color: #31344b;
+    border:none;
+    color: #fff;
+    padding: 0 8px;
+    box-shadow: rgb(0 0 0) 0px 1px 3px, rgb(0 0 0) 1px 2px 9px;
+}
+
+
+.EditButton, .DeleteButton {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    color: #3a86ff;
+    padding: 3px;
+    margin: 6px 8px;
+    width: 85px;
+    height: 36px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    border-radius: 3px;
+}
+/*.DeleteButton {*/
+   /* background-color: #ef233c;*/
+    /*color:#fff;
+}*/
+.EditButton:hover {
+    background-color: #31344b;
+    color: #fff;
+}
+.DeleteButton:hover {
+    background-color: #ef233c;
+    color: #fff;
+}
+
+@media print {
+    body * {
+        visibility: hidden; /* إخفاء كل العناصر */
+    }
+
+    #InvoiceLabel, #InvoiceLabel * {
+        visibility: visible; /* إظهار الفاتورة فقط */
+    }
+
+    #InvoiceLabel {
+        position: absolute; /* وضع الفاتورة بشكل مناسب */
+        left: 0;
+        top: 0;
+    }
+    .GeneralButton {
+        display: none; /* إخفاء الأزرار أثناء الطباعة */
+    }
+}
